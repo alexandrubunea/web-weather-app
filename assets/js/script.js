@@ -17,6 +17,8 @@ $("#searchBtn").click(() => {
     let link = "https://api.openweathermap.org/data/2.5/weather?q=" + input +",ro&lang=ro&units=metric&appid=" + api_key;
     $.getJSON(link, (data) => {
         updateWeather(data);
+    }).fail(() => {
+        alert("Zona introdusă nu a fost găsită! Puteți introduce doar zone de pe teritoriul României!");   
     });
 });
 
