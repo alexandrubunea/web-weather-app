@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicație vreme</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container text-center mt-5">
+            <label for="cityName" class="fs-1">NUMELE ORASULUI</label>
+            <br>
+            <p class="fs-6">
+                Denumirile orașelor trebuie să fie in engleză, spre exemplu București -> Bucharest.<br>
+                Numele trebuie să fie precis, exemplu: Drobeta Turnu-Severin, Cluj-Napoca, ș.a.m.d.
+                <br>
+                Evitați folosirea diacriticelor pentru restul orașelor.
+            </p>
+            <br>
+            <div class="searchInput">
+                <input type="text" placeholder="Bucharest, Timisoara, Sibiu, ..." id="cityInput">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container-fluid">
+        <h1 id="cityName">Bucharest</h1>
+        <p id="cityCoords">Lat: 44.4323 & Lon: 26.1063</p>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h3 id="weatherName">cer senin</h3>
+                <h3 id="weatherIcon"><i class="fas fa-sun"></i></h3>
+            </div>
+            <div class="col">
+                <h3 id="weatherHumidity">39% UMIDITATE</h3>
+                <h3 id="weatherIcon"><i class="fas fa-tint"></i></h3>
+            </div>
+            <div class="col">
+                <h3 id="windSpeedTitle">VITEZA VÂNTULUI</h3>
+                <h3 id="windSpeedIcon"><i class="fas fa-wind"></i></h3>
+                <h3 id="windSpeedInfo">30 M/S</h3>
+            </div>
+            <div class="col">
+                <div class="row mb-5">
+                    <h3><i class="fas fa-hand-paper"></i> <span id="feelsLike">SE SIMT 30 DE GRADE CELSIUS</span></h3> 
+                </div>
+                <div class="row mb-5">
+                    <h3><i class="fas fa-temperature-high"></i> <span id="tempMax">TEMPERATURA MAXIMA: 30 DE GRADE CELSIUS</span></h3>
+                </div>
+                <div class="row">
+                    <h3><i class="fas fa-temperature-low"></i> <span id="tempMin">TEMPERATURA MINIMA: 25 DE GRADE CELSIUS</span></h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
